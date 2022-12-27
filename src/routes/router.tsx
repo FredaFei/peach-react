@@ -1,5 +1,5 @@
 import { createBrowserRouter, } from 'react-router-dom'
-import { RedirectToWelcome1 } from '../components/RedirectToWelcome1'
+import { NotFound } from '../pages/NotFound'
 import { MainLayout } from '../layouts/MainLayout'
 import { WelcomeLayout } from '../layouts/WelcomeLayout'
 import { Welcome1 } from '../pages/welcome/Welcome1'
@@ -10,9 +10,8 @@ import { Welcome4 } from '../pages/welcome/Welcome4'
 export const router = createBrowserRouter([
   {
     path: '/',
-    // element: <div>ddd</div>,
     element: <MainLayout />,
-    errorElement: <RedirectToWelcome1 />,
+    errorElement: <NotFound />,
     children: [
       {
         path: 'welcome',
