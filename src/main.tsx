@@ -4,6 +4,7 @@ import { RouterProvider, } from 'react-router-dom'
 import { router } from './routes/router'
 import 'virtual:uno.css'
 import './global.scss'
+import 'virtual:svgsprites'
 
 const el = document.getElementById('root') as HTMLElement
 ReactDOM.createRoot(el).render(
