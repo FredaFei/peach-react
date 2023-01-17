@@ -9,18 +9,6 @@ export default defineConfig({
   shortcuts: {
   },
   safelist: [],
-  preflights: [
-    {
-      layer: 'component',
-      getCSS: () => `
-        .c-icon{
-          fill: currentColor;
-          width: 1.2em;
-          height: 1.2em;
-        }
-      `
-    }
-  ],
   presets: [
     presetUno(),
     presetAttributify(),
