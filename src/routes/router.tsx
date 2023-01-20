@@ -6,7 +6,7 @@ import { Welcome3 } from '../pages/welcome/Welcome3'
 import { Welcome4 } from '../pages/welcome/Welcome4'
 import { Root } from '../components/Root'
 import { Home } from '../pages/Home'
-import { Items } from '../pages/Items'
+import { ItemsPage } from '../pages/items/ItemsPage'
 
 export const router = createBrowserRouter([
   { path: '/',element: <Root /> },
@@ -21,5 +21,5 @@ export const router = createBrowserRouter([
       { path: '4', element: <Welcome4 /> },
     ],
   },
-  { path: '/items',element: <Items /> },
+  { path: '/items',element: <ItemsPage /> },
 ])
